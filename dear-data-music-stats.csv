@@ -1,14 +1,19 @@
-No.,Date,No. of Streams,Minutes Streamed,Different Artists,Different Albums,Top Genre
-1,6 October,6,23,4,6,pop
-2,7 October,14,62,13,12,alternative
-3,8 October,14,67,8,8,alternative
-4,9 October,17,59,6,10,hyperpop
-5,10 October,3,14,4,3,rock
-6,11 October,7,34,6,6,alternative
-7,12 October,0,0,0,0,
-8,13 October,17,68,9,9,pop
-9,14 October,3,10,1,3,hyperpop
-10,15 October,1,2,1,1,hyperpop
-11,16 October,21,87,10,11,alternative
-12,17 October,18,72,6,5,alternative
-13,18 October,0,0,0,0,
+No.,Date,No. of Streams,Minutes Streamed,Different Artists,Different Albums,Top Genre,,
+1,6 October,6,23,4,6,pop,,
+2,7 October,14,62,13,12,alternative,,
+3,8 October,14,67,8,8,alternative,,
+4,9 October,17,59,6,10,hyperpop,,
+5,10 October,3,14,4,3,rock,,
+6,11 October,7,34,6,6,alternative,,
+7,12 October,0,0,0,0,,,forgot my earphones
+8,13 October,17,68,9,9,pop,,
+9,14 October,3,10,1,3,hyperpop,,
+10,15 October,1,2,1,1,hyperpop,,
+11,16 October,21,87,10,11,alternative,,
+12,17 October,18,72,6,5,alternative,,
+13,18 October,0,0,0,0,,,earphones weren't charged
+14,19 October,20,80,8,7,alternative,,
+15,20 October,22,92,15,16,alternative,,
+16,21 October,5,19,6,5,alternative,,
+17,22 October,23,84,12,13,pop,,
+18,23 October,32,115,2,3,hyperpop,,new album release
