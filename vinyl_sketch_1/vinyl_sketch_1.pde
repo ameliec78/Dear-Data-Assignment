@@ -41,4 +41,15 @@ void draw()
   for (int i = 0; i < myVinyls.length; i++) {
     myVinyls[i].draw();
   }
+
+  for (int i=0; i < myVinyls.length; i++) {
+    myVinyls[i].drawPopup();
+  }
+
 }
+
+  void mousePressed() {
+    for (int i=0; i < myVinyls.length; i++) {
+      myVinyls[i].checkClick();
+    }
+  }

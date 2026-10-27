@@ -21,6 +21,8 @@ class Vinyl
   float streamArcLength, artistArcLength, albumArcLength;
   color genreColour;
 
+  boolean isClicked = false;
+
   Vinyl(String d, int m, int s, int art, int alb, String g)
   {
     date = d;
@@ -48,20 +50,20 @@ class Vinyl
     arcDiameter6 = 85;
 
     //mapping data
-    rotationSpeed = map(minutes, 0, 200, 0.01, 0.3);
+    rotationSpeed = map(minutes, 0, 200, 0.01, 0.2);
     streamArcLength = map(streams, 0, 50, 0, HALF_PI * 1.5);
     artistArcLength = map(artists, 0, 20, 0, HALF_PI * 1.5);
     albumArcLength = map(albums, 0, 20, 0, HALF_PI * 1.5);
 
     //mapping the colour
     if (genre.equals("alternative")) {
-      genreColour = color(#79B4FA);
+      genreColour = color(#9fc4c0);
     } else if (genre.equals("hyperpop")) {
-      genreColour = color(#5FE57D);
+      genreColour = color(#d79a9f);
     } else if (genre.equals("pop")) {
-      genreColour = color(#F787F7);
+      genreColour = color(#dba623);
     } else if (genre.equals("rock")) {
-      genreColour = color(#B471ED);
+      genreColour = color(#9c94b5);
     }
   }
 
@@ -84,7 +86,7 @@ class Vinyl
     fill(254, 244, 232);
     circle(0, 0, diameter3);
 
-    stroke(#CBC9C9, 80);
+    stroke(#D8D8D8, 80);
     noFill();
     arc(0, 0, arcDiameter4, arcDiameter4, PI, PI + albumArcLength);
     arc(0, 0, arcDiameter5, arcDiameter5, PI, PI + artistArcLength);
@@ -98,4 +100,36 @@ class Vinyl
 
     popMatrix();
   }
+
+  void checkClick() {
+    float distance = dist(mouseX, mouseY, x, y);
+
+    if (distance < diameter1 / 2) {
+      isClicked = !isClicked;
+    } else {
+      isClicked = false;
+    }
+  }
+
+    void drawPopup() {
+      if (isClicked) {
+        pushStyle();
+
+        fill(255);
+        stroke(#CF6A6F);
+        strokeWeight(2);
+        rect(mouseX + 10, mouseY + 10, 160, 110, 5);
+        
+        fill(#171717);
+        textSize(14);
+        textAlign(LEFT, TOP);
+        
+        text("Date: " + date, mouseX+20, mouseY+20);
+        text("Genre: " + genre, mouseX+20, mouseY+40);
+        text("Streams: " + streams, mouseX+20, mouseY+60);
+        text("Minutes: " + minutes, mouseX+20, mouseY+80);
+        
+        popStyle();
+      }
+    }
 }
