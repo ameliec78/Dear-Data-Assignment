@@ -4,9 +4,13 @@ I have collected 5 stats daily: the number of minutes I listened to music, the n
 the number of different albums I listened to, and the top genre for that day. These 5 categories influence different parts of the vinyl record.
 
 Number of minutes = how fast the record is spinning (its velocity).
+
 Number of different albums = the length of the first groove in the vinyl.
+
 Number of different artists = the length of the second groove in the vinyl.
+
 Number of tracks streamed = the length of the third groove in the vinyl.
+
 Top genre = the colour of the inner ring of the vinyl.
 
 Observations from recording my own data:
